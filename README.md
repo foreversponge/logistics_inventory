@@ -29,4 +29,4 @@ Setup:
 9. The application is good to go!
 10. (Optional) If desired, change directory into the backend folder and run "npm test" to run a few tests I wrote.
 
-Note: The item collection page will not show if you do not have any items/collections created.
+**Note**: The item collection page will not show if you do not have any items/collections created.
