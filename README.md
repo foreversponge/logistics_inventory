@@ -22,7 +22,7 @@ Setup:
 2. Run `npm install` in the frontend folder to install all the dependencies.
 3. Run `npm install` in the backend folder to install all the dependencies.
 4. Create a schema called "inventory" in your local SQL database (eg.: using MySQL Workbench).
-5. Open backend/src/main/config.js. Notice the comments to enter your credentials for your local SQL database. Enter your credentials in the sqeuelize.ts file as well.
+5. Open backend/src/main/**config.js**. Notice the comments to enter your credentials for your local SQL database. Enter your credentials in the **sequelize.ts** file as well.
 6. Change directory into backend/src/main and run the command `npx sequelize-cli db:migrate`. This will create the necessary tables in your schema to run the project.
 7. Run `npm run dev`. This will start the backend server on port 8080.
 8. Change directory into the frontend folder and run `npm start`. It will start the frontend on port 3000. If it does not open a browser, you can access it at `http://localhost:3000/`.
