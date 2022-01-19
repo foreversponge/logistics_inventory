@@ -6,7 +6,7 @@ export const sequelize = new Sequelize({
   dialect: 'mysql',
   host: "localhost",
   username: "root",    //replace with your own local database usernamne
-  password: "mysqlpw", //replace with your own local database password
+  password: "enter password here", //replace with your own local database password
   storage: ':memory:',
   models: [path.join(__dirname, '..', 'models', '*.ts')],
   define: {
