@@ -4,7 +4,7 @@
 The goal of this project is to serve as an inventory web tracking application for a logistics company.
 
 ### Technology overview
-|                          | Technology/Tool                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|                          | Technology/Tool                                                                                                                                                                                                                                                                                                                       
 | ------------------------ | ------------------------ 
 | Frontend                 | React + Typescript
 | Backend                  | Typescript + NodeJs + Express + Tsyringe + Jest + MySQL + Sequelize
@@ -27,3 +27,5 @@ Initial Setup:
 7. Change directory into the frontend folder and run `npm start`. It will most likely tell you that something is already running on port 3000 (the backend server) and ask if you want to run the app on another port. Press on "y".
 8. The application is good to go!
 9. (Optional) If desired, change directory into the backend folder and run "npm test" to run a few tests I wrote.
+
+Note: The item collection page will not show if you do not have any items/collections created.
