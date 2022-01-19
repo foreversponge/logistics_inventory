@@ -6,7 +6,7 @@ The goal of this project is to serve as an inventory web tracking application fo
 ### Technology overview
 |                          | Technology/Tool                                                                                                                                                                                                                                                                                                                       
 | ------------------------ | ------------------------ 
-| Frontend                 | React + Typescript
+| Frontend                 | React + Typescript + Material UI
 | Backend                  | Typescript + NodeJs + Express + Tsyringe + Jest + MySQL + Sequelize
 
 ## Project Setup
