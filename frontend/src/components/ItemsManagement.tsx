@@ -55,7 +55,7 @@ const ItemsManagement = () => {
   ]
 
   const getItems = async(): Promise<AxiosResponse<any>> => {
-    return axios.get(`http://localhost:3000/items`)
+    return axios.get(`http://localhost:8080/items`)
   }
 
   const fetchItems = async () => {
@@ -95,7 +95,7 @@ const ItemsManagement = () => {
       height: createValues.height,
       quantity: createValues.quantity,
     };
-    axios.post(`http://localhost:3000/item`, data).then(res => {
+    axios.post(`http://localhost:8080/item`, data).then(res => {
       const httpRes = res.status + " - " + res.statusText
       alert(httpRes)
     }).catch(err => {
@@ -119,7 +119,7 @@ const ItemsManagement = () => {
         height: editValues.height,
         quantity: editValues.quantity,
       };
-      axios.put(`http://localhost:3000/item/${editValues.id}`, data).then(res => {
+      axios.put(`http://localhost:8080/item/${editValues.id}`, data).then(res => {
         const httpRes = res.status + " - " + res.statusText
         alert(httpRes)
       }).catch(err => {
@@ -133,7 +133,7 @@ const ItemsManagement = () => {
 
   const handleDelete = () => {
     if(idToDelete) { 
-      axios.delete(`http://localhost:3000/item/${idToDelete}`).then(res => {
+      axios.delete(`http://localhost:8080/item/${idToDelete}`).then(res => {
         const httpRes = res.status + " - " + res.statusText
         alert(httpRes)
       }).catch(err => {

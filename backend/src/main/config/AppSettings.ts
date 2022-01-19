@@ -1,4 +1,4 @@
 
 export class AppSettings {
-  public static BACKEND_PORT = 3000;
+  public static BACKEND_PORT = 8080;
 }

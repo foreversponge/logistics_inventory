@@ -43,7 +43,7 @@ const CollectionsManagement = () => {
   ]
 
   const fetchCollections = async () => {
-    const retrievedCollections = await axios.get(`http://localhost:3000/collections`);
+    const retrievedCollections = await axios.get(`http://localhost:8080/collections`);
     const collections : any = [];
     retrievedCollections.data.forEach((param : any) => {
       const collectionInfo: any = {
@@ -71,7 +71,7 @@ const CollectionsManagement = () => {
       name: createValues.name,
       description: createValues.description,
     };
-    axios.post(`http://localhost:3000/collection`, data).then(res => {
+    axios.post(`http://localhost:8080/collection`, data).then(res => {
       const httpRes = res.status + " - " + res.statusText
       alert(httpRes)
     }).catch(err => {
@@ -91,7 +91,7 @@ const CollectionsManagement = () => {
         name: editValues.name,
         description: editValues.description
       };
-      axios.put(`http://localhost:3000/collection/${editValues.id}`, data).then(res => {
+      axios.put(`http://localhost:8080/collection/${editValues.id}`, data).then(res => {
         const httpRes = res.status + " - " + res.statusText
         alert(httpRes)
       }).catch(err => {
@@ -105,7 +105,7 @@ const CollectionsManagement = () => {
 
   const handleDelete = () => {
     if(idToDelete) {
-      axios.delete(`http://localhost:3000/collection/${idToDelete}`).then(res => {
+      axios.delete(`http://localhost:8080/collection/${idToDelete}`).then(res => {
         const httpRes = res.status + " - " + res.statusText
         alert(httpRes)
       }).catch(err => {

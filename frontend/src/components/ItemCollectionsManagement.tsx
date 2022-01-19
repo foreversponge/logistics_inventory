@@ -34,17 +34,17 @@ const ItemCollectionsManagement = () => {
   ]
 
   const fetchItems = async () => {
-    const retrievedItems = await axios.get(`http://localhost:3000/items`);
+    const retrievedItems = await axios.get(`http://localhost:8080/items`);
     setItems(retrievedItems.data)
   };
   
   const fetchCollections = async () => {
-    const retrievedCollections = await axios.get(`http://localhost:3000/collections`);
+    const retrievedCollections = await axios.get(`http://localhost:8080/collections`);
     setCollections(retrievedCollections.data)
   };
 
   const fetchItemCollections = async () => {
-    const retrievedItemCollections = await axios.get(`http://localhost:3000/itemCollections`);
+    const retrievedItemCollections = await axios.get(`http://localhost:8080/itemCollections`);
     const tempItemCollections : any = [];
     let uselessId = 0;
     retrievedItemCollections.data.forEach((element : any) => {
@@ -87,7 +87,7 @@ const ItemCollectionsManagement = () => {
       itemId: itemId,
       collectionId: collectionId,
     };
-    axios.post(`http://localhost:3000/itemCollection`, data).then(res => {
+    axios.post(`http://localhost:8080/itemCollection`, data).then(res => {
       const httpRes = res.status + " - " + res.statusText
       alert(httpRes)
     }).catch(err => {
@@ -98,7 +98,7 @@ const ItemCollectionsManagement = () => {
 
   const handleDelete = (e:any) => {
     if (deleteItemId && deleteCollectionId) {
-      axios.delete(`http://localhost:3000/itemCollection/${deleteItemId}/${deleteCollectionId}`).then(res => {
+      axios.delete(`http://localhost:8080/itemCollection/${deleteItemId}/${deleteCollectionId}`).then(res => {
         const httpRes = res.status + " - " + res.statusText
         alert(httpRes)
       }).catch(err => {
