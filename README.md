@@ -17,7 +17,7 @@ Prerequisites:
 - Typescript
 - MySQL
 
-Initial Setup:
+Setup:
 1. Run `npm install` in the frontend folder to install all the dependencies (refer to [package.json](package.json)).
 2. Run `npm install` in the backend folder to install all the dependencies (refer to [package.json](package.json)).
 3. Create a schema called "inventory" in your local database (eg.: using MySQL Workbench).
