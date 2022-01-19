@@ -26,4 +26,4 @@ Initial Setup:
 6. Run `npm run dev`. This will start the server on port 3000.
 7. Change directory into the frontend folder and run `npm start`. It will most likely tell you that something is already running on port 3000 (the backend server) and ask if you want to run the app on another port. Press on "y".
 8. The application is good to go!
-(9). If desired, change directory into the backend folder and run "npm test" to run a few tests I wrote.
+9. (Optional) If desired, change directory into the backend folder and run "npm test" to run a few tests I wrote.
